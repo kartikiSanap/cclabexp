@@ -1,0 +1,130 @@
+<html> 
+<head> 
+<title></title> 
+<style>
+.header 
+{ 
+    margin-left:14px; 
+margin-right:9px; 
+margin-top:24px;
+} 
+.para 
+{ 
+display:block; 
+} 
+.column { 
+float: left; 
+padding:40px; 
+height: 600px; 
+} 
+.left { 
+width: 20%; 
+} 
+.right { 
+width: 40%; 
+} 
+.topnav {
+background-color: rgba(255,255,255,0.2); overflow: hidden; 
+margin-left:14px; 
+margin-right:9px; 
+} 
+/* Style the links inside the navigation bar */ .topnav a { 
+float: left; 
+color: #f2f2f2; 
+text-align: center; 
+padding: 14px 16px; 
+text-decoration: none; 
+font-size: 17px; 
+} 
+/* Change the color of links on hover */ .topnav a:hover { 
+background-color: #ddd; 
+color: black; 
+} 
+/* Add a color to the active/current link */ .topnav a.active 
+{ 
+background-color: #4CAF50; 
+color: white; 
+} 
+
+ul { 
+list-style-type: none; 
+margin-top:0.1px; 
+padding:2px; 
+width: 94%; 
+height: 96%; 
+background:rgba(255,255,255,0.1); 
+} 
+
+
+</style>
+</head> 
+<body style="background-color:black"> 
+<div class="header" style="background-color:rgba(255,255,255,0.2)"> 
+<br> 
+<div 
+style="width:250px;height:70px;float:right;background-color:#d9d9d9;opacity:0.8;margin-right:30px;margin-top:8px;margin-bottom:30px"><p>&nbsp;&nbsp; <b><font color="black" size="3.5px">Email - sanapkk123@gmail.com</b></font></font></b><br>&nbsp;&nbsp;&nbsp;<b><font color="black"size="3.5px">Name - Kartiki Sanap</font></b></p></div> 
+<h1 align="center" style="margin-left:360px;margin-right:300px;margin-top:10px"><font size="9px" color="white">Simple Colour Maker</font></h1> 
+</br> 
+</div> 
+<br> 
+<br> 
+<div class="topnav" > 
+<a href="#home" ><font size="5px"></font></a> 
+
+<div align="right" style="margin-left:1200px; margin-right:38px; margin-bottom:5px; margin-top:10px; background-color:rgba(255,255,255,0.2);"id="info" >
+<input type=text 
+style="margin-top:10px;height:30px;margin-bottom:10px;background-color:#d9d9d9;opacity:0.7" placeholder=" " /> 
+&nbsp; 
+
+<input type=text 
+style="margin-top:10px;height:30px;margin-bottom:10px;margin-right:2px;background-color:#d9d9d9;opacity:0.7" placeholder=" " /> 
+&nbsp; 
+</div> 
+</div> 
+<br> 
+<table cellspacing=25px cellpadding=1px> 
+<tr> 
+<td><div class="column left" style="background-color:rgba(255,255,255,0.2); 
+width:230px;height:400px;"> 
+<ul> 
+
+<li ></li> 
+
+</ul> 
+</div></td> 
+<td><div id="demo" class="column middle" align="center" style="ba 
+padding-left:10px;width:890px;height:400px;background-color:rgba(255,255,255,0.2)">
+<h2 align="center"><font color="white">Select the RGB Combination:</font></h2>
+<br><br>
+<div id="r1" style="margin-left:200px;margin-right:200px;border:1px solid white"> 
+    <p><b><font color="white" >RED</font></b> &nbsp;&nbsp;&nbsp;&nbsp;<input type="range" min=0 max=255 value=0 id="red" oninput="fun()"/></p> 
+    <p><b><font color="white">GREEN </font></b><input type="range" min=0 max=255 value=0 id="green" oninput="fun()"/></p> 
+    <p><b><font color="white">BLUE</font></b>&nbsp;&nbsp;&nbsp;&nbsp;<input type="range" min=0 max=255 value=0 id="blue" oninput="fun()"/></p> 
+    </div> 
+    </div> 
+     </div></td> 
+<td><div class="column right" style=" background-color:rgba(255,255,255,0.2); 
+width:230px;height:400px"> 
+<ul> 
+
+    <li ></li> 
+    
+    </ul> 
+
+</div> 
+</td> 
+</tr> 
+</table> 
+<script>
+ 
+function fun() 
+{ 
+var r=document.getElementById("red"); 
+var g=document.getElementById("green"); 
+var b=document.getElementById("blue"); 
+document.body.style.backgroundColor ="rgb("+r.value+","+g.value+","+b.value+")"; } 
+</script 
+</body> 
+</html> 
+
+
